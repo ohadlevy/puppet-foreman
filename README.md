@@ -2,7 +2,7 @@
 
 Installs Foreman as a standalone application or using apache passenger.
 
-download the source code from http://github.com/ohadlevy/puppet-foreman/tarball/master
+download the source code from <http://github.com/ohadlevy/puppet-foreman/tarball/master>
 
 usage:
 	echo include foreman | puppet  --verbose --modulepath /path_to/tarball
