@@ -4,6 +4,16 @@ Installs Foreman as a standalone application or using apache passenger.
 
 download the source code from <http://github.com/ohadlevy/puppet-foreman/tarball/master>
 
+# Requirements
+
+if you are using RHE5, EPEL repo must be enabled <http://fedoraproject.org/wiki/EPEL>
+
+
+# Setup
+
+If you are using puppet store configs please set $using_store_configs to true in foreman/manifests/init.pp.
+If you want this module to configure passenger as well, set $using_passenger to true in foreman/manifests/init.pp
+
 usage:
 	echo include foreman | puppet  --verbose --modulepath /path_to/tarball
 
