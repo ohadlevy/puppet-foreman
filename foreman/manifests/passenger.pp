@@ -27,4 +27,16 @@ class foreman::passenger {
     refreshonly => true
   }
 
+#passenger ~2.10 will not load the app if a config.ru doesn't exist in the app
+#root. Also, passenger will run as suid to the owner of the config.ru file.
+  case $lsbdistid {
+    'Ubuntu','Debian':  {
+      file{"${foreman_dir}/config.ru":
+        ensure  => file,
+        owner   => $foreman_user,
+        source  => "file:///${foreman_dir}/vendor/rails/railties/dispatches/config.ru",
+      }
+    }
+  }
+
 }
