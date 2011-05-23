@@ -2,7 +2,7 @@
   ServerName <%= fqdn %>
   ServerAlias foreman
   DocumentRoot <%= scope.lookupvar 'foreman::foreman_dir' %>/public
-<% if has_variable?("lsbdistid") and lsbdistid == 'Ubuntu' || lsbdistid == 'Debian' -%>  PassengerAppRoot <%= scope.lookupvar 'foreman::foreman_dir' %><% end %>
+<% if has_variable?("lsbdistid") and lsbdistid == 'Ubuntu' || lsbdistid == 'Debian' %>  PassengerAppRoot <%= scope.lookupvar 'foreman::foreman_dir' %><% end %>
 
   RailsAutoDetect On
   AddDefaultCharset UTF-8
