@@ -5,4 +5,9 @@ class tftp::config {
     require => [Class["tftp::install"], Class["xinetd::install"]],
     notify  => Class["xinetd::service"]
   }
+
+  file { $tftp::params::root:
+    ensure => directory,
+    notify  => Class["xinetd::service"],
+  }
 }
