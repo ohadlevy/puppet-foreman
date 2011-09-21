@@ -1,6 +1,6 @@
 class apache::ssl {
   include apache
-  package { [ "mod_ssl" , "mod_authz_ldap" ]:
+  package { "mod_ssl":
     ensure => present, require => Package["httpd"],
     notify => Class["apache::service"],
   }
