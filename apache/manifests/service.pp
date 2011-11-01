@@ -1,11 +1,17 @@
 class apache::service {
-  service { "httpd":
+  $http_service = $operatingsystem ? {
+    Debian  => "apache2",
+    default => "httpd",
+  }
+
+  service { "$http_service":
     ensure    => running, enable => true, hasstatus => true, hasrestart => true,
+    alias     => "httpd",
     subscribe => Package["httpd"]
    }
 
   exec { "reload-apache":
-    command     => "/etc/init.d/httpd reload",
+    command     => "/etc/init.d/$http_service reload",
     onlyif      => "/usr/sbin/apachectl -t",
     require     => Service["httpd"],
     refreshonly => true,
