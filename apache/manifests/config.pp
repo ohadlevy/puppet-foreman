@@ -12,11 +12,11 @@ class apache::config {
   }
 
   file{
-    "/etc/httpd/conf/httpd.conf":
+    "$apache::params::configdir/$apache::params::conffile":
       mode    => 0644,
       notify  => Exec["reload-apache"],
       require => Class["apache::install"];
-    "/etc/httpd/conf.d":
+    "$apache::params::configdir/":
       ensure  => directory,
       mode    => 0644,
       notify  => Exec["reload-apache"],
