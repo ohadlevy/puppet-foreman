@@ -5,7 +5,7 @@ class apache::ssl {
     Debian:  {
       exec { "enable-ssl":
         command => "/usr/sbin/a2enmod ssl",
-        unless  => "/bin/ls /etc/apache2/mods-enabled/ssl.load",
+        creates => "/etc/apache2/mods-enabled/ssl.load",
         notify  => Service["httpd"],
         require => Class["apache::install"],
       }
@@ -16,7 +16,7 @@ class apache::ssl {
         notify => Class["apache::service"],
       }
       file {
-        "/etc/httpd/conf.d/ssl.conf":
+        "$apache::params::configdir/ssl.conf":
           mode => 0644, owner => root, group => root,
           notify => Exec["reload-apache"];
         ["/var/cache/mod_ssl", "/var/cache/mod_ssl/scache"]:
