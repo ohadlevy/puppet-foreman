@@ -13,7 +13,7 @@ is left as a post-install task exercise for the reader.
 
 In addition to reviewing the variables, make sure your puppet certificate exists. If
 you have ever run puppet before, this will be fine, but if this is a fresh install,
-run
+run (as root)
 
     puppet master -v --no-daemonize
 
