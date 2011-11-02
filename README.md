@@ -9,7 +9,7 @@ download the source code from <http://github.com/ohadlevy/puppet-foreman/tarball
 
 if you are using RHEL, EPEL repo must be enabled <http://fedoraproject.org/wiki/EPEL>
 
-if you are using Debian, see the additional notes in README.debian
+if you are using Debian (or Ubuntu), see the additional notes in README.debian
 
 # Setup
 

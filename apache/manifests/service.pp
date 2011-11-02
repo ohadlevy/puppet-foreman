@@ -1,7 +1,7 @@
 class apache::service {
   $http_service = $operatingsystem ? {
-    Debian  => "apache2",
-    default => "httpd",
+    /(Debian|Ubuntu)/ => "apache2",
+    default           => "httpd",
   }
 
   service { "$http_service":

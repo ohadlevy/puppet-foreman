@@ -2,7 +2,7 @@ class apache::ssl {
   include apache
 
   case $operatingsystem {
-    Debian:  {
+    Debian,Ubuntu:  {
       exec { "enable-ssl":
         command => "/usr/sbin/a2enmod ssl",
         creates => "/etc/apache2/mods-enabled/ssl.load",
