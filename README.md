@@ -2,6 +2,7 @@
 
 Installs Foreman as a standalone application or using apache passenger.
 Installs Foreman Proxy
+May install an example puppet master setup using passenger as well, including the tweaks required for foreman.
 
 download the source code from <http://github.com/ohadlevy/puppet-foreman/tarball/master>
 
@@ -28,6 +29,13 @@ to install both foreman and its proxy:
 if you just want to include the relavant bits to run on your puppet master you may
 
     include foreman::params, foreman::config::enc, foreman::config::reports
+
+if you want to install it all on one box
+
+    export MODULE_PATH="/etc/puppet/modules/common"
+    mkdir -p $MODULE_PATH
+    wget http://github.com/ohadlevy/puppet-foreman/tarball/master -O - |tar xzvf - -C $MODULE_PATH --strip-components=1
+    echo include puppet, puppet::server, foreman, foreman_proxy | puppet --modulepath $MODULE_PATH
 
 # Contributing
 
