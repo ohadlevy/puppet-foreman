@@ -1,4 +1,4 @@
-define git::repo(target, bare = false, source = false, user = "root") {
+define git::repo($target, $bare = false, $source = false, $user = "root") {
 
   if $source {
     $cmd = "${git::params::bin} clone $source $target"

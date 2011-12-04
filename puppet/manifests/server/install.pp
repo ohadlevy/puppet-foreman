@@ -1,4 +1,10 @@
 class puppet::server::install {
-  package { "puppet-server": ensure => installed }
+
+  $packages = $operatingsystem ? {
+    /(Debian|Ubuntu)/ => ["puppetmaster"],
+    default           => ["puppet-server"],
+  }
+
+  package { $packages: ensure => installed }
 
 }
