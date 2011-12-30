@@ -1,0 +1,50 @@
+{
+  "name": "marcellods-foreman_proxy",
+  "author": "Ohad Levy",
+  "description": "",
+  "license": "",
+  "project_page": "",
+  "source": "",
+  "summary": "",
+  "version": "0.0.2",
+  "checksums": {
+    "Modulefile": "77227ef9989ac2e342bd8df5a24b6803",
+    "files\\puppet\\config.ru": "e0f1c0292e8108cfed8f13f2b44acc7b",
+    "manifests\\apache\\manifests\\config.pp": "3a236d34a89ce632a815b38be2c8b3e2",
+    "manifests\\apache\\manifests\\init.pp": "abd9c40bb149978658e0465758811ae0",
+    "manifests\\apache\\manifests\\install.pp": "d71a21877bca57fc72d4fdb8f99272ea",
+    "manifests\\apache\\manifests\\params.pp": "d89e5faea431e7d1ae88658f2fe8beb3",
+    "manifests\\apache\\manifests\\service.pp": "6de2877d532a82e0129e5d60312f6704",
+    "manifests\\apache\\manifests\\site.pp": "e939c1966e9195ab877928671b6bd771",
+    "manifests\\apache\\manifests\\ssl.pp": "aa6e6149961ff88eeaecfe7f1eec5470",
+    "manifests\\config.pp": "b65f47b7af3553d85c2eac2cf0133d01",
+    "manifests\\init.pp": "d636fdcd3aa2c44f075e499fbdf8e1a9",
+    "manifests\\install.pp": "983b631f5531bc2ae35c7efe204f0829",
+    "manifests\\params.pp": "ed677b551d68ab0698671bb92e6e57e0",
+    "manifests\\passenger\\manifests\\init.pp": "16d9e68f685bfda4d876ff3de2757d4b",
+    "manifests\\passenger\\manifests\\install.pp": "8411b1257f9bbe6fed8d452c66bbe292",
+    "manifests\\passenger\\manifests\\install\\debian.pp": "bc67bba1603cc914f5ad663afbffa97c",
+    "manifests\\passenger\\manifests\\install\\redhat.pp": "676d62290dd436d96001a0d100b21faf",
+    "manifests\\puppet\\manifests\\config.pp": "e5298ce5c2f7b92650d9bfde7c7538b7",
+    "manifests\\puppet\\manifests\\init.pp": "a7f5428b2235a5adf16c70dbf6b844dc",
+    "manifests\\puppet\\manifests\\install.pp": "ce2629194705079c757c0e17445e0a84",
+    "manifests\\puppet\\manifests\\params.pp": "6d8d9a590d51ed22cb484e7c18db245a",
+    "manifests\\puppet\\manifests\\server.pp": "4c5c3996111e821bd2879ced16e78adc",
+    "manifests\\puppet\\manifests\\server\\config.pp": "09828d78e6d2ec0f5e6ee19f1674a7e4",
+    "manifests\\puppet\\manifests\\server\\install.pp": "81970e8a68363915e899815c388f8aa1",
+    "manifests\\puppet\\manifests\\server\\passenger.pp": "bcfa64d6c2c93097b3bb3228daeca35d",
+    "manifests\\puppetca.pp": "e7acddf69eceee360bfe61759fbae67b",
+    "manifests\\service.pp": "ab51e7b1f59ad78ce3d8559791f01603",
+    "manifests\\tftp.pp": "816997f045820f589a7847c2005c4f2f",
+    "templates\\puppet.conf.erb": "efc567bc8e0dd831d3a901373d72e86f",
+    "templates\\server\\puppet-server.conf.erb": "84d2d9123e543b286c2442b900dc56df",
+    "templates\\server\\puppet-vhost.conf.erb": "62eee9a31fb098248ff87aea06a20a8d",
+    "templates\\settings.yml.erb": "f12b87c2e0ef5ce329db5aefeef23222",
+    "templates\\vhost.conf": "549cc861d7e3cdc072b77f011b7b604c"
+  },
+  "dependencies": [
+    {
+      "name": "marcellods/foreman"
+    }
+  ]
+}
