@@ -44,11 +44,11 @@
     "manifests\\xinetd\\manifests\\install.pp": "7ae5a48da50570cda910dca592ad59fd",
     "manifests\\xinetd\\manifests\\service.pp": "c932d13d9f47971aaa349e69a574e278",
     "templates\\puppet.conf.erb": "efc567bc8e0dd831d3a901373d72e86f",
-    "templates\\server\\puppet-server.conf.erb": "84d2d9123e543b286c2442b900dc56df",
-    "templates\\server\\puppet-vhost.conf.erb": "62eee9a31fb098248ff87aea06a20a8d",
+    "templates\\server\\puppet-server.conf.erb": "907b56702cf413662550256ab047854c",
+    "templates\\server\\puppet-vhost.conf.erb": "96970f465027f95032652f6a4cf4fa9e",
     "templates\\settings.yml.erb": "f12b87c2e0ef5ce329db5aefeef23222",
     "templates\\vhost.conf": "549cc861d7e3cdc072b77f011b7b604c",
-    "templates\\xinetd-tftp": "e7a3fd80213d004e59ca2b70db4e8094"
+    "templates\\xinetd-tftp": "ec8e834a19917260054f8db5309e1d9e"
   },
   "dependencies": [
     {
