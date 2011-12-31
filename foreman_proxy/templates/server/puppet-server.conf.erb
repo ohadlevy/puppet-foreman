@@ -5,7 +5,7 @@
     external_nodes = /etc/puppet/node.rb
     node_terminus  = exec
 
-<% scope.lookupvar("puppet::params::environments").each do |env| -%>
+<% scope.lookupvar("foreman_proxy::puppet::params::environments").each do |env| -%>
 [<%= env %>]
-    modulepath = <%= scope.lookupvar("puppet::params::modules_path") %>/<%= env %>:<%= scope.lookupvar("puppet::params::common_modules_path") %>
+    modulepath = <%= scope.lookupvar("foreman_proxy::puppet::params::modules_path") %>/<%= env %>:<%= scope.lookupvar("foreman_proxy::puppet::params::common_modules_path") %>
 <% end -%>
