@@ -1,4 +1,4 @@
-class tftp::install {
+class foreman_proxy::tftp::install {
   case $operatingsystem {
     redhat,centos,fedora,Scientific: { $tftp_package = "tftp-server" }
     Debian: { $tftp_package = "atftpd" }

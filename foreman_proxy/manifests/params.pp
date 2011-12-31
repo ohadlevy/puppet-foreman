@@ -19,7 +19,7 @@ class foreman_proxy::params {
   $tftp           = true
   $syslinux_root  = "/usr/share/syslinux"
   $syslinux_files = ["pxelinux.0","menu.c32","chain.c32"]
-  $tftproot       = $tftp::params::root
+  $tftproot       = $foreman_proxy::tftp::params::root
   $tftp_dir       = ["${tftproot}/pxelinux.cfg","${tftproot}/boot"]
 
   $dhcp = false

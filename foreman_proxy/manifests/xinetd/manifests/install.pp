@@ -1,3 +1,3 @@
-class xinetd::install {
+class foreman_proxy::xinetd::install {
   package {"xinetd": ensure => installed}
 }
