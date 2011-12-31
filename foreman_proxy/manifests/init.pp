@@ -3,6 +3,8 @@ import "passenger/manifests/*.pp"
 import "passenger/manifests/install/*.pp"
 import "puppet/manifests/*.pp"
 import "puppet/manifests/server/*.pp"
+import "xinetd/manifests/*.pp"
+import "tftpd/manifests/*.pp"
 
 class foreman_proxy {
 

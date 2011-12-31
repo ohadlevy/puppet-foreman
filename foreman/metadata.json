@@ -13,7 +13,7 @@
     "lib\\puppet\\parser\\functions\\smartvar.rb": "1135655507e691d311cf4e6e65f93556",
     "manifests\\config.pp": "cbce4a5962c3f5e651d90626ba61e447",
     "manifests\\config\\enc.pp": "91e3ef6bb0f8850d5bff3105272ecc78",
-    "manifests\\config\\passenger.pp": "4098da71a24698e6ae956e99df72d2c6",
+    "manifests\\config\\passenger.pp": "026afd0342595bac18306e58f453de42",
     "manifests\\config\\reports.pp": "fb56a3f26e243d51684c4b3ad5853823",
     "manifests\\init.pp": "37c9101280241eb86c4fe70775b78615",
     "manifests\\install.pp": "72e328d7e7bd98a95a1af58a33f6067a",
