@@ -1,6 +1,6 @@
 class foreman::config::passenger {
-  include foreman_proxy::apache::ssl
-  include foreman_proxy::passenger
+  include smart_modules::apache::ssl
+  include smart_modules::passenger
 
   file {"foreman_vhost":
     path    => "${foreman::params::apache_conf_dir}/foreman.conf",
