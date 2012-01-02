@@ -17,9 +17,9 @@ import "passenger/manifests/install/*.pp"
 import "puppet/manifests/*.pp"
 import "puppet/manifests/server/*.pp"
 import "xinetd/manifests/*.pp"
-import "tftpd/manifests/*.pp"
+import "tftp/manifests/*.pp"
 
 class smart_modules {
 
-
+  include smart_modules::tftp::params 
 }
