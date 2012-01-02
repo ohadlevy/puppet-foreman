@@ -1,4 +1,4 @@
-class foreman_proxy::tftp2 {
+class foreman_proxy::tftp {
   include smart_modules::tftp
 
   file{ $foreman_proxy::params::tftp_dir:
@@ -12,7 +12,7 @@ class foreman_proxy::tftp2 {
   link_file{$foreman_proxy::params::syslinux_files:
     source_path => $foreman_proxy::params::syslinux_root,
     target_path => $foreman_proxy::params::tftproot,
-    require     => Class["tftp::install"];
+    require     => Class["smart_modules::tftp::install"];
   }
 }
 define link_file($source_path, $target_path) {

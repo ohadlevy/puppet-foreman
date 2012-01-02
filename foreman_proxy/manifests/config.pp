@@ -32,7 +32,7 @@ class foreman_proxy::config {
    }
 
   if $foreman_proxy::params::puppetca  { include foreman_proxy::puppetca }
-  if $foreman_proxy::params::tftp      { include foreman_proxy::tftp2 }
+  if $foreman_proxy::params::tftp      { include foreman_proxy::tftp }
   #if $foreman_proxy::params::dhcp      { include foreman_proxy::dhcp }
   #if $foreman_proxy::params::dns       { include foreman_proxy::dns }
 
