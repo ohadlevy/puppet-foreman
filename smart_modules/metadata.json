@@ -1,0 +1,52 @@
+{
+  "name": "marcellods-smart_modules",
+  "author": "Ohad Levy",
+  "description": "",
+  "license": "",
+  "project_page": "",
+  "source": "",
+  "summary": "",
+  "version": "0.0.1",
+  "checksums": {
+    "Modulefile": "16110d912143456b7d7135f5d4e0fa5e",
+    "README": "a57b28d6bb1ed35d6e8e46516163d6a9",
+    "files\\puppet\\config.ru": "e0f1c0292e8108cfed8f13f2b44acc7b",
+    "manifests\\apache\\manifests\\config.pp": "523fb7ea4c33d85a30877295413dddfa",
+    "manifests\\apache\\manifests\\init.pp": "150beec687b630c4a0840a2191b6c825",
+    "manifests\\apache\\manifests\\install.pp": "409cef1d3e2d01ad68db40bd8f0344f4",
+    "manifests\\apache\\manifests\\params.pp": "7523877e693991b80b4f9695ce19ab53",
+    "manifests\\apache\\manifests\\service.pp": "b59a655f1e42f7b579f66820b0827ada",
+    "manifests\\apache\\manifests\\site.pp": "a0b909aca71cbf5fdf43070a6ff11c38",
+    "manifests\\apache\\manifests\\ssl.pp": "e05f1c9941e49132c67562da8d335f6b",
+    "manifests\\init.pp": "f46f9444b209060e1c1b20cef8f58ba1",
+    "manifests\\passenger\\manifests\\init.pp": "75d46ffc489aa235cc55cf91e65c380e",
+    "manifests\\passenger\\manifests\\install.pp": "cdaeb1da6baf20befe3f386c87850b65",
+    "manifests\\passenger\\manifests\\install\\debian.pp": "09157a0bf30511977754cd573ce8f81d",
+    "manifests\\passenger\\manifests\\install\\redhat.pp": "f43ea033e2c009bbd00841510861054b",
+    "manifests\\puppet\\manifests\\config.pp": "1578370c6c1d61317e491ed957bf0eef",
+    "manifests\\puppet\\manifests\\init.pp": "595e626289f5e1e78dc0fdcd26c082fd",
+    "manifests\\puppet\\manifests\\install.pp": "d3501b6fe04b34295c8bedab316d2058",
+    "manifests\\puppet\\manifests\\params.pp": "dccd2de7ecf4ca68fae15636fa02ca0e",
+    "manifests\\puppet\\manifests\\server.pp": "13f17a02817cda280875fa40bb2403fa",
+    "manifests\\puppet\\manifests\\server\\config.pp": "47441bc5a4da4f83f3718f2e83528761",
+    "manifests\\puppet\\manifests\\server\\install.pp": "60f29c5cb6ac33bad864a6d88ac57453",
+    "manifests\\puppet\\manifests\\server\\passenger.pp": "53b3012017aacb28b79f4ae31d5075c7",
+    "manifests\\tftp\\manifests\\config.pp": "e84d126f3af3662c01a7165bedc4eeb3",
+    "manifests\\tftp\\manifests\\init.pp": "e93fa9de8df47feca38f6cb816b99872",
+    "manifests\\tftp\\manifests\\install.pp": "d8019bfb46be08723ad012360025a71f",
+    "manifests\\tftp\\manifests\\params.pp": "945cdbf82323e42da77a62c4a04b62cc",
+    "manifests\\xinetd\\manifests\\init.pp": "3e1f20491c03a22ecd48b1d348030b69",
+    "manifests\\xinetd\\manifests\\install.pp": "33b8ebfb2e142a5185740ae0ac141557",
+    "manifests\\xinetd\\manifests\\service.pp": "a420f1f14a82395daffe54dd30e5fb6e",
+    "templates\\puppet.conf.erb": "efc567bc8e0dd831d3a901373d72e86f",
+    "templates\\server\\puppet-server.conf.erb": "0f2d106302afc68cecbb7614dc5f9fa0",
+    "templates\\server\\puppet-vhost.conf.erb": "e66435534b4710b94d38d7b32321ffcb",
+    "templates\\vhost.conf": "549cc861d7e3cdc072b77f011b7b604c",
+    "templates\\xinetd-tftp": "5e80945de97dc66a8e7657a9c90b38b9"
+  },
+  "dependencies": [
+    {
+      "name": "marcellods/foreman"
+    }
+  ]
+}

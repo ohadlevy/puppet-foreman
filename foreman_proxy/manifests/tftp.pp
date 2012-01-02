@@ -1,5 +1,5 @@
 class foreman_proxy::tftp2 {
-  include foreman_proxy::tftp
+  include smart_modules::tftp
 
   file{ $foreman_proxy::params::tftp_dir:
     owner   => $foreman_proxy::params::user,

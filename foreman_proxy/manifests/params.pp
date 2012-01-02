@@ -15,11 +15,11 @@ class foreman_proxy::params {
   $puppetrun_cmd = "/usr/sbin/puppetrun"
 
   # TFTP settings
-  require "tftp"  # ensures we can access tftp module parameters
+  require "smart_modules"  # ensures we can access tftp module parameters
   $tftp           = true
   $syslinux_root  = "/usr/share/syslinux"
   $syslinux_files = ["pxelinux.0","menu.c32","chain.c32"]
-  $tftproot       = $foreman_proxy::tftp::params::root
+  $tftproot       = $smart_modules::tftp::params::root
   $tftp_dir       = ["${tftproot}/pxelinux.cfg","${tftproot}/boot"]
 
   $dhcp = false
