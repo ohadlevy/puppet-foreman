@@ -1,0 +1,29 @@
+{
+  "name": "marcellods-foreman_proxy",
+  "author": "Ohad Levy",
+  "description": "",
+  "license": "",
+  "project_page": "",
+  "source": "",
+  "summary": "",
+  "version": "0.0.2",
+  "checksums": {
+    "Modulefile": "72cbd1bfd5da454510bc3ffa457a2a4e",
+    "manifests\\config.pp": "d6c5a1e11c994da8fc693a73fcae24d2",
+    "manifests\\init.pp": "d636fdcd3aa2c44f075e499fbdf8e1a9",
+    "manifests\\install.pp": "983b631f5531bc2ae35c7efe204f0829",
+    "manifests\\params.pp": "725ac0e1066068b578d88da4e7319635",
+    "manifests\\puppetca.pp": "e7acddf69eceee360bfe61759fbae67b",
+    "manifests\\service.pp": "ab51e7b1f59ad78ce3d8559791f01603",
+    "manifests\\tftp.pp": "c450aa3c372a620d522194e8c95a2aea",
+    "templates\\settings.yml.erb": "f12b87c2e0ef5ce329db5aefeef23222"
+  },
+  "dependencies": [
+    {
+      "name": "marcellods/smart_modules"
+    },
+    {
+      "name": "marcellods/foreman"
+    }
+  ]
+}

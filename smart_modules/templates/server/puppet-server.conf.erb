@@ -1,0 +1,11 @@
+
+[master]
+    autosign       = $confdir/autosign.conf { mode = 664 }
+    reports        = foreman
+    external_nodes = /etc/puppet/node.rb
+    node_terminus  = exec
+
+<% scope.lookupvar("smart_modules::puppet::params::environments").each do |env| -%>
+[<%= env %>]
+    modulepath = <%= scope.lookupvar("smart_modules::puppet::params::modules_path") %>/<%= env %>:<%= scope.lookupvar("smart_modules::puppet::params::common_modules_path") %>
+<% end -%>

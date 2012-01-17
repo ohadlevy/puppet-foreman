@@ -1,0 +1,34 @@
+{
+  "name": "marcellods-foreman",
+  "author": "Ohad Levy",
+  "description": "",
+  "license": "",
+  "project_page": "",
+  "source": "",
+  "summary": "",
+  "version": "0.0.2",
+  "checksums": {
+    "Modulefile": "6ac303d52fb2fef1d0560aa28fa4cb6c",
+    "lib\\puppet\\parser\\functions\\foreman.rb": "fddf65a65b9d5371d6ad02a451ea0683",
+    "lib\\puppet\\parser\\functions\\smartvar.rb": "1135655507e691d311cf4e6e65f93556",
+    "manifests\\config.pp": "cbce4a5962c3f5e651d90626ba61e447",
+    "manifests\\config\\enc.pp": "91e3ef6bb0f8850d5bff3105272ecc78",
+    "manifests\\config\\passenger.pp": "18d5f8e2abcc06ee3ec14142a1195f32",
+    "manifests\\config\\reports.pp": "fb56a3f26e243d51684c4b3ad5853823",
+    "manifests\\init.pp": "37c9101280241eb86c4fe70775b78615",
+    "manifests\\install.pp": "72e328d7e7bd98a95a1af58a33f6067a",
+    "manifests\\install\\repos.pp": "2d77774c73d7b82494e2152f223dbd64",
+    "manifests\\params.pp": "af2e61d1fe87d198aa5117c1864a0a83",
+    "manifests\\service.pp": "38a461d67cf244ae96bd39655163b2b6",
+    "templates\\database.yaml.erb": "57194f3432d602f0f55a4b6f5d98a234",
+    "templates\\external_node.rb.erb": "47b3fd1f354d435e589bf1fe25299d22",
+    "templates\\foreman-report.rb.erb": "29cf5f3ed2b0b0399cbd8d1a6e137ff0",
+    "templates\\foreman-vhost.conf.erb": "f95d3e631332ec7da85e8e8c35bddfb3",
+    "templates\\settings.yaml.erb": "7020b74aae6c04c9285115fa1e0e207b"
+  },
+  "dependencies": [
+    {
+      "name": "marcellods/smart_modules"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+name 'marcellods-foreman_proxy'
+version '0.0.2'
+
+author 'Ohad Levy'
+license ''
+dependency 'marcellods/smart_modules'
+dependency 'marcellods/foreman'
