@@ -1,6 +1,6 @@
 class foreman_proxy::service {
-  service {"foreman-proxy":
+  service {'foreman-proxy':
     ensure  => running,
-    require => Class["foreman_proxy::config"]
+    require => Class['foreman_proxy::config']
   }
 }

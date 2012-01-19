@@ -1,19 +1,19 @@
 class apache::params {
-  case $operatingsystem {
+  case $::operatingsystem {
     Debian,Ubuntu: {
-      $user      = "www-data"
-      $group     = "www-data"
-      $configdir = "/etc/apache2/conf.d"
-      $conffile  = "apache2.conf"
+      $user      = 'www-data'
+      $group     = 'www-data'
+      $configdir = '/etc/apache2/conf.d'
+      $conffile  = 'apache2.conf'
     }
     default: {
-      $user      = "apache"
-      $group     = "apache"
-      $configdir = "/etc/httpd/conf.d"
-      $conffile  = "httpd.conf"
+      $user      = 'apache'
+      $group     = 'apache'
+      $configdir = '/etc/httpd/conf.d'
+      $conffile  = 'httpd.conf'
     }
   }
 
-  $home      = "/var/www"
+  $home      = '/var/www'
 
 }

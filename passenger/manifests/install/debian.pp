@@ -1,10 +1,10 @@
 class passenger::install::debian {
 
-  package{"passenger":
-    name    => "libapache2-mod-passenger",
+  package{'passenger':
     ensure  => installed,
-    require => Class["apache::install"],
-    before  => Class["apache::service"],
+    name    => 'libapache2-mod-passenger',
+    require => Class['apache::install'],
+    before  => Class['apache::service'],
   }
 
 }
