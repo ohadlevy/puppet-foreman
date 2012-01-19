@@ -1,3 +1,3 @@
 class tftp::params {
-  $root = "/tftpboot"
+  $root = '/tftpboot'
 }
