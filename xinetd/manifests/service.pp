@@ -1,9 +1,9 @@
 class xinetd::service {
-  service {"xinetd":
+  service {'xinetd':
     ensure     => running,
     enable     => true,
     hasrestart => true,
     hasstatus  => false,
-    require => Class["xinetd::install"]
+    require    => Class['xinetd::install']
   }
 }
