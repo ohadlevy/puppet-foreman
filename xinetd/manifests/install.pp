@@ -1,3 +1,3 @@
 class xinetd::install {
-  package {"xinetd": ensure => installed}
+  package {'xinetd': ensure => installed}
 }
