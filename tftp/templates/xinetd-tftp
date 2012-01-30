@@ -5,7 +5,7 @@ service tftp
   wait        = yes
   user        = root
   server      = /usr/sbin/in.tftpd
-  server_args = -v -s <%= scope.lookupvar("tftp::params::root") %>
+  server_args = -v -s <%= scope.lookupvar("tftp::params::root") %> -m <%= scope.lookupvar("tftp::params::map") %>
   disable     = no
   per_source  = 11
   cps         = 100 2
