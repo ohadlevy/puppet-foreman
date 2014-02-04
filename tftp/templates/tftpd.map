@@ -1,0 +1,4 @@
+# Convert backslashes to slashes
+re ^bootmgr\.exe boot/bootmgr.exe
+re ^\\Boot\\ boot/
+rg \\ /
